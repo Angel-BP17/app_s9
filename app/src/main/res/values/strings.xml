@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">app_s9</string>
+    <string name="crear_perfil_de_usuario">Crear Perfil de Usuario</string>
+    <string name="visitas_0">Visitas: 0</string>
+    <string name="resetear_contador">Resetear Contador</string>
+    <string name="limpiar_todo">Limpiar Todo</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="edad">Edad</string>
+    <string name="email">Email</string>
+    <string name="guardar_perfil">Guardar Perfil</string>
+    <string name="cargar_perfil">Cargar Perfil</string>
+    <string name="perfil_no_creado">Perfil no creado</string>
+    <string name="perfil_de_usuario">Perfil de Usuario:</string>
+    <string name="regresar_al_inicio">Regresar al Inicio</string>
 </resources>

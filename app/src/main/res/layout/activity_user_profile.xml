@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main"
+    tools:context=".UserProfileActivity">
+
+    <EditText
+        android:id="@+id/editTextProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/nombre_completo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextProfileAge"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/edad"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextProfileEmail"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/buttonSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar_perfil"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/regresar_al_inicio"
+        android:textColor="@android:color/white" />
+</LinearLayout>

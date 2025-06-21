@@ -8,43 +8,39 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="425dp"
+        android:layout_height="434dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
 
-        <EditText
-            android:id="@+id/editTextUsername"
-            android:layout_width="match_parent"
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Ingresa tu nombre"
-            android:inputType="textPersonName"
-            android:layout_marginBottom="16dp" />
-
-        <Button
-            android:id="@+id/buttonSave"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Guardar"
-            android:layout_marginBottom="16dp" />
-
-        <Button
-            android:id="@+id/buttonLoad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Cargar"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:text="Modo oscuro"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/buttonClear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Limpiar Todo"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:text="@string/limpiar_todo" />
+
+        <Button
+            android:id="@+id/buttonResetCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/resetear_contador" />
 
         <TextView
             android:id="@+id/textViewResult"
@@ -53,6 +49,38 @@
             android:text=""
             android:textSize="18sp"
             android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewVisitCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/visitas_0"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textViewProfileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/perfil_de_usuario"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewProfileData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/perfil_no_creado"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonGoToProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/crear_perfil_de_usuario" />
 
     </LinearLayout>
 
