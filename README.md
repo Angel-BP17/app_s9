@@ -5,9 +5,9 @@ Aplicación Android de ejemplo que demuestra el uso básico de SharedPreferences
 ## 📱 Descripción
 
 Esta aplicación implementa un sistema simple de SharedPreferences que permite:
-- Guardar y recuperar datos de usuario
-- Detectar la primera ejecución de la app
-- Limpiar todas las preferencias guardadas
+- Guardar y recuperar datos del perfil usuario
+- Contar la cantidad de visitas de la app
+- Cambiar el tema de la aplicación a modo oscuro
 
 ## 🚀 Características
 
@@ -38,9 +38,9 @@ git clone https://github.com/GxJohan/app_s9.git
 
 ## 💻 Uso
 
-1. **Guardar datos**: Ingresa tu nombre y presiona "Guardar"
-2. **Cargar datos**: Presiona "Cargar" para ver los datos guardados
-3. **Limpiar datos**: Presiona "Limpiar Todo" para eliminar todas las preferencias
+1. **Guardar datos de perfil**: Ingresa tu nombre, edad y correo y presiona "Guardar Perfil"
+2. **Cargar datos**: Carga los datos en la vista principal de la aplicación
+3. **Modo oscuro**: Cambia el tema de la aplicación a "Modo oscuro" en tiempo real y guarda dicha configuración
 
 ## 📂 Estructura del Proyecto
 
@@ -52,9 +52,11 @@ app_s9/
 │           ├── java/com/example/app_s9/
 │           │   ├── MainActivity.kt
 │           │   └── SharedPreferencesHelper.kt
+|           |   └── UserProfileActivity.kt
 │           └── res/
 │               └── layout/
 │                   └── activity_main.xml
+|                   └── activity_user_profile.xml
 └── SharedPreferences_Guide.md
 ```
 
